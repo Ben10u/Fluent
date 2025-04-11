@@ -1,9 +1,3 @@
---[[
-	Credit:
-	Original Fluent : https://github.com/dawid-scripts/Fluent
-	Themes : https://github.com/ActualMasterOogway/Fluent-Renewed/
-]]
-
 local Lighting = game:GetService("Lighting")
 local RunService = game:GetService("RunService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
@@ -894,7 +888,7 @@ function Creator.GetThemeProperty(Property)
 	if Themes[Library.Theme][Property] then
 		return Themes[Library.Theme][Property]
 	end
-	return Themes["Dark"][Property]
+	return Themes["Darker"][Property]
 end
 
 function Creator.New(Name, Properties, Children)
@@ -5801,7 +5795,7 @@ function Library:CreateWindow(Config)
 	Library.MinimizeKey = Config.MinimizeKey or Enum.KeyCode.LeftControl
 	Library.UseAcrylic = Config.Acrylic or false
 	Library.Acrylic = Config.Acrylic or false
-	Library.Theme = Config.Theme or "Dark"
+	Library.Theme = Config.Theme or "Darker"
 	Library.Transparency = Config.Transparency or false
 	if Config.Acrylic then
 		Acrylic.init()
