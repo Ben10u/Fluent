@@ -888,7 +888,7 @@ function Creator.GetThemeProperty(Property)
 	if Themes[Library.Theme][Property] then
 		return Themes[Library.Theme][Property]
 	end
-	return Themes["Darker"][Property]
+	return Themes["Dark"][Property]
 end
 
 function Creator.New(Name, Properties, Children)
@@ -5795,7 +5795,7 @@ function Library:CreateWindow(Config)
 	Library.MinimizeKey = Config.MinimizeKey or Enum.KeyCode.LeftControl
 	Library.UseAcrylic = Config.Acrylic or false
 	Library.Acrylic = Config.Acrylic or false
-	Library.Theme = Config.Theme or "Darker"
+	Library.Theme = Config.Theme or "Dark"
 	Library.Transparency = Config.Transparency or false
 	if Config.Acrylic then
 		Acrylic.init()
